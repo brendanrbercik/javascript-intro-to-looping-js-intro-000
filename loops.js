@@ -18,8 +18,13 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(num) {
+  function decrementNum() {
+    num = num - 1;
+    return num;
+  }
+
   do {
     console.log("I run once regardless.")
-  } while (num > 0)
+  } while (decrementNum() > 0)
 
 }
